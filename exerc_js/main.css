@@ -45,3 +45,12 @@ button:hover {
     text-align: center;
     display: none;
 }
+
+.error-message {
+    font-size: 12px;
+    padding: 8px;
+    background-color: rgb(103, 94, 198);
+    color: #fff;
+    margin-bottom: 8px;
+    display: none;
+}
