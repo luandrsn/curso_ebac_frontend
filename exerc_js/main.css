@@ -43,4 +43,5 @@ button:hover {
     padding: 16px;
     color: #fff;
     text-align: center;
+    display: none;
 }
