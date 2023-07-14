@@ -5,4 +5,9 @@ return campoA<campoB;
 
 form.addEventListener('submit', function(e) {
     e.preventDefault ();
+
+    const campA = document.getElementById('campo-a');
+    if (validaCampo(campA.value)) {
+        alert("erro")
+    }
 })
