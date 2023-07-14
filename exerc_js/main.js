@@ -26,4 +26,7 @@ form.addEventListener('submit', function(e) {
     }
 })
 
-console.log(form);
+campB.addEventListener('keyup', function(e) {
+    console.log(e.target.value);
+    formEvalido = validaCampo(e.target.value);
+})
