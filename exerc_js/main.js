@@ -29,4 +29,12 @@ form.addEventListener('submit', function(e) {
 campB.addEventListener('keyup', function(e) {
     console.log(e.target.value);
     formEvalido = validaCampo(e.target.value);
+
+    if (formEvalido) {
+        campB.style.border = '1px solid rgb(103, 94, 198)';
+        document.querySelector('.error-message').style.display = 'block';
+    } else {
+        campB.style.border = 'none';
+        document.querySelector('.error-message').style.display = 'none';
+    }
 })
