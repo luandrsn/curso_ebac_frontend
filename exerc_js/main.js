@@ -1,7 +1,8 @@
 const form = document.getElementById('form-comparativo');
 
 function validaCampo(campoA,campoB) {
-    return campoA<campoB;
+    let campo = campoA < campoB;
+    return campo;
 }
 
 form.addEventListener('submit', function(e) {
@@ -12,3 +13,5 @@ form.addEventListener('submit', function(e) {
         alert("erro")
     }
 })
+
+console.log(form);
