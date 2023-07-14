@@ -31,10 +31,10 @@ campB.addEventListener('keyup', function(e) {
     formEvalido = validaCampo(e.target.value);
 
     if (!formEvalido) {
-        campA.style.border = '1px solid rgb(103, 94, 198)';
+        campA.classList.add('error');
         document.querySelector('.error-message').style.display = 'block';
     } else {
-        campA.style.border = '';
+        campA.classList.remove('error');
         document.querySelector('.error-message').style.display = 'none';
     }
 });
