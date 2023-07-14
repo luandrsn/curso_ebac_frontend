@@ -21,7 +21,7 @@ form.addEventListener('submit', function(e) {
         campA.value = '';
         campB.value = '';
     } else {
-        campB.border = '1px solid rgb(103, 94, 198)';
+        campB.border = '1px solid black';
         document.querySelector('.error-message').style.display = 'block';
     }
 })
