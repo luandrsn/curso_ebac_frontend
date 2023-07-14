@@ -1,4 +1,5 @@
 const form = document.getElementById('form-comparativo');
+const campB = document.getElementById('campo-b');
 
 function validaCampo(campoA,campoB) {
     let campo = campoA < campoB;
@@ -10,7 +11,6 @@ form.addEventListener('submit', function(e) {
     e.preventDefault ();
 
     const campA = document.getElementById('campo-a');
-    const campB = document.getElementById('campo-b');
     const mensagemSucesso =`O valor <b>${campB.value}</b> é maior que o valor <b>${campA.value}</b>;`;
     formEvalido = validaCampo(campA.value,campB.value)
     if (formEvalido) {
