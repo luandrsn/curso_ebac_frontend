@@ -1,5 +1,6 @@
 const form = document.getElementById('form-comparativo');
 const campB = document.getElementById('campo-b');
+let formEvalido = false;
 
 function validaCampo(campoA,campoB) {
     let campo = campoA < campoB;
@@ -7,7 +8,6 @@ function validaCampo(campoA,campoB) {
 }
 
 form.addEventListener('submit', function(e) {
-    let formEvalido = false;
     e.preventDefault ();
 
     const campA = document.getElementById('campo-a');
