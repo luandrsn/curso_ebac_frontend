@@ -10,3 +10,7 @@
     max-width: 640px;
     width: 100%;
 }
+
+form {
+    margin-top: 40px;
+}
