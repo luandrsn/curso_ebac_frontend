@@ -14,12 +14,14 @@ form.addEventListener('submit', function(e) {
     const mensagemSucesso =`O valor <b>${campB.value}</b> é maior que o valor <b>${campA.value}</b>;`;
     formEvalido = validaCampo(campA.value,campB.value)
     if (formEvalido) {
-        document.querySelector('.success-message').innerHTML = mensagemSucesso;
+        const containerMensagemSucesso = document.querySelector('.success-message');
+        containerMensagemSucesso.innerHTML = mensagemSucesso;
+        containerMensagemSucesso.style.display ='block';
 
         campA.value = '';
         campB.value = '';
     } else {
-        alert('Incorreto');
+        document.querySelector('.error-message').style.display = 'block';
     }
 })
 
