@@ -11,10 +11,10 @@ form.addEventListener('submit', function(e) {
 
     const campA = document.getElementById('campo-a');
     const campB = document.getElementById('campo-b');
-    const mensagemSucesso =`O valor ${campB.value} é maior que o valor ${campA.value};`;
+    const mensagemSucesso =`O valor <b>${campB.value}</b> é maior que o valor <b>${campA.value}</b>;`;
     formEvalido = validaCampo(campA.value,campB.value)
     if (formEvalido) {
-        alert(mensagemSucesso);
+        document.querySelector('.success-message').innerHTML = mensagemSucesso;
 
         campA.value = '';
         campB.value = '';
