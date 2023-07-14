@@ -14,3 +14,11 @@
 form {
     margin-top: 40px;
 }
+
+input,
+button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+}
