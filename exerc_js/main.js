@@ -9,8 +9,11 @@ form.addEventListener('submit', function(e) {
     e.preventDefault ();
 
     const campA = document.getElementById('campo-a');
-    if (!validaCampo(campA.value)) {
+    const campB = document.getElementById('campo-b');
+    if (!validaCampo(campA.value,campB.value)) {
         alert("erro")
+    } else {
+        alert('tudo ok');
     }
 })
 
