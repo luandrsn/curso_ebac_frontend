@@ -1,4 +1,6 @@
 const form = document.getElementById('form-comparativo');
+const campB = document.getElementById('campo-b');
+let formEvalido = false;
 
 function validaCampo(campoA,campoB) {
     let campo = campoA < campoB;
@@ -6,11 +8,9 @@ function validaCampo(campoA,campoB) {
 }
 
 form.addEventListener('submit', function(e) {
-    let formEvalido = false;
     e.preventDefault ();
 
     const campA = document.getElementById('campo-a');
-    const campB = document.getElementById('campo-b');
     const mensagemSucesso =`O valor <b>${campB.value}</b> é maior que o valor <b>${campA.value}</b>;`;
     formEvalido = validaCampo(campA.value,campB.value)
     if (formEvalido) {
@@ -26,4 +26,15 @@ form.addEventListener('submit', function(e) {
     }
 })
 
-console.log(form);
+campB.addEventListener('keyup', function(e) {
+    console.log(e.target.value);
+    formEvalido = validaCampo(e.target.value);
+
+    if (!formEvalido) {
+        campB.style.border = '1px solid rgb(103, 94, 198)';
+        document.querySelector('.error-message').style.display = 'block';
+    } else {
+        campB.style.border = '';
+        document.querySelector('.error-message').style.display = 'none';
+    }
+});
