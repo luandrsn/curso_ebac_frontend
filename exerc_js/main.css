@@ -42,4 +42,5 @@ button:hover {
     background-color: rgb(66, 51, 225);
     padding: 16px;
     color: #fff;
+    text-align: center;
 }
