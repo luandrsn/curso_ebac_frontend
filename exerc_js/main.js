@@ -15,6 +15,9 @@ form.addEventListener('submit', function(e) {
     formEvalido = validaCampo(campA.value,campB.value)
     if (formEvalido) {
         alert(mensagemSucesso);
+
+        campA.value = '';
+        campB.value = '';
     } else {
         alert('Incorreto');
     }
