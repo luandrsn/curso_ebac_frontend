@@ -12,8 +12,8 @@ function validaCampo(campoA,campoB) {
 form.addEventListener('submit', function(e) {
     e.preventDefault ();
 
-    let campoA = parseInt(document.getElementById('campo-a'));
-    let campoB = parseInt(document.getElementById('campo-b'));
+    let campoA = parseFloat(document.getElementById('campo-a'));
+    let campoB = parseFloat(document.getElementById('campo-b'));
 
     const campA = document.getElementById('campo-a');
     const mensagemSucesso =`O valor <b>${campB.value}</b> é maior que o valor <b>${campA.value}</b>;`;
