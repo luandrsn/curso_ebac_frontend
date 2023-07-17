@@ -1,8 +1,8 @@
 const form = document.getElementById('form-comparativo');
 const campB = document.getElementById('campo-b');
 
-let campoA = parseInt(document.getElementById('campo-a').value);
-let campoB = parseInt(document.getElementById('campo-b').value);
+let campoA = parseInt(document.getElementById('campo-a'));
+let campoB = parseInt(document.getElementById('campo-b'));
 let formEvalido = false;
 
 function validaCampo(campoA,campoB) {
