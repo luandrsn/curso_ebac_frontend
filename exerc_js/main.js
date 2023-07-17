@@ -37,9 +37,6 @@ campB.addEventListener('keyup', function(e) {
     if (formEvalido) {
         campB.style.border = '1px solid rgb(103, 94, 198)';
         document.querySelector('.error-message').style.display = 'block';
-
-        campoA = '';
-        campB = '';
     } else {
         campB.style.border = '';
         document.querySelector('.error-message').style.display = 'none';
