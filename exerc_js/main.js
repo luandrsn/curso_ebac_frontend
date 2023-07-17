@@ -1,4 +1,5 @@
 const form = document.getElementById('form-comparativo');
+const campB = document.getElementById('campo-b');
 
 let formEvalido = false;
 
@@ -24,20 +25,20 @@ form.addEventListener('submit', function(e) {
         campoA = '';
         campoB = '';
     } else {
-        campoB.style.border = '1px solid rgb(103, 94, 198)';
+        campB.style.border = '1px solid rgb(103, 94, 198)';
         document.querySelector('.error-message').style.display = 'block';
     }
 })
 
-campoB.addEventListener('keyup', function(e) {
+campB.addEventListener('keyup', function(e) {
     console.log(e.target.value);
     formEvalido = validaCampo(e.target.value);
 
     if (formEvalido) {
-        campoB.style.border = '1px solid rgb(103, 94, 198)';
+        campB.style.border = '1px solid rgb(103, 94, 198)';
         document.querySelector('.error-message').style.display = 'block';
     } else {
-        campoB.style.border = '';
+        campB.style.border = '';
         document.querySelector('.error-message').style.display = 'none';
     }
 })
