@@ -14,7 +14,7 @@ form.addEventListener('submit', function(e) {
     let formEvalido = false;
 
     const mensagemSucesso =`O valor <b>${campB.value}</b> é maior que o valor <b>${campA.value}</b>;`;
-    formEvalido = validaCampo(parseInt(campA.value,campB.value))
+    formEvalido = validaCampo(parseFloat(campA.value,campB.value))
     if (formEvalido) {
         const containerMensagemSucesso = document.querySelector('.success-message');
         containerMensagemSucesso.innerHTML = mensagemSucesso;
