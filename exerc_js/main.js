@@ -5,7 +5,7 @@ let formEvalido = false;
 
 function validaCampo(campoA,campoB) {
     let campo = campoA < campoB;
-    return parseFloat(campo);
+    return campo;
 }
 
 form.addEventListener('submit', function(e) {
