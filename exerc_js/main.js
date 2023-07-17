@@ -22,8 +22,8 @@ form.addEventListener('submit', function(e) {
         containerMensagemSucesso.innerHTML = mensagemSucesso;
         containerMensagemSucesso.style.display ='block';
 
-    const form = document.querySelector('form-comparativo').reset;
-    
+        campoA = '';
+        campoB = '';
     } else {
         campB.style.border = '1px solid rgb(103, 94, 198)';
         document.querySelector('.error-message').style.display = 'block';
