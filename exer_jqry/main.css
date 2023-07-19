@@ -4,3 +4,26 @@
     box-sizing: border-box;
     font-family: 'Lalezar', sans-serif;
 }
+
+.container {
+    text-align: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.626);
+}
+
+header img {
+    height: 50px;
+}
+
+body {
+    background-color: rgb(230, 226, 219);
+    padding-top: 100px;
+}
