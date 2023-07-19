@@ -11,6 +11,7 @@
 
 header {
     margin-bottom: 40px;
+    background-color: rgb(215, 212, 205);
 }
 
 header h1 {
@@ -21,9 +22,10 @@ header h1 {
 
 header img {
     height: 50px;
+    margin-top: 20px;
 }
 
 body {
     background-color: rgb(230, 226, 219);
-    padding-top: 100px;
+    padding-top: 70px;
 }
