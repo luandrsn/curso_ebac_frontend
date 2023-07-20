@@ -46,7 +46,7 @@ body {
 }
 
 input, button {
-    padding: 8px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
 }
@@ -54,7 +54,6 @@ input, button {
 input {
     width: 400px;
     font-size: 16px;
-    padding: 8px 10px;
 }
 
 button {
@@ -63,8 +62,6 @@ button {
     background-color: rgb(245, 212, 82);
     color: rgba(0, 0, 0, 0.626);
     cursor: pointer;
-    padding: 8px 0;
-
 }
 
 button:hover {
