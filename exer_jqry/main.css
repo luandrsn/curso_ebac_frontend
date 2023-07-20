@@ -30,3 +30,31 @@ body {
     background-color: rgb(230, 226, 219);
     padding-top: 70px;
 }
+
+input, button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    width: 400px;
+    font-size: 16px;
+}
+
+button {
+    width: 150px;
+    font-size: 16px;
+    background-color: rgb(245, 212, 82);
+    color: rgba(0, 0, 0, 0.626);
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: rgb(241, 220, 132);
+}
+
+input:focus {
+    outline-color: rgb(245, 212, 82);
+}
