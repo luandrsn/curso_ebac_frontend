@@ -26,6 +26,20 @@ header img {
     margin-top: 20px;
 }
 
+header button {
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+    padding: 1px 0px;
+    font-size: 12px;
+}
+
+.title-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     background-color: rgb(230, 226, 219);
     padding-top: 70px;
@@ -40,6 +54,7 @@ input, button {
 input {
     width: 400px;
     font-size: 16px;
+    padding: 8px 10px;
 }
 
 button {
@@ -48,6 +63,7 @@ button {
     background-color: rgb(245, 212, 82);
     color: rgba(0, 0, 0, 0.626);
     cursor: pointer;
+    padding: 8px 0;
 
 }
 
