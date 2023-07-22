@@ -45,6 +45,10 @@ body {
     padding-top: 70px;
 }
 
+form {
+    display: none;
+}
+
 input, button {
     padding: 10px;
     border: none;
