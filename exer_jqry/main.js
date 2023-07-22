@@ -14,5 +14,8 @@ $(document).ready(function() {
         $(`<li>${novaTarefa}</li>`).appendTo(inserirTarefa);
         $(inserirTarefa).appendTo('ul');
         $('#tarefa-nova').val('');
+        $('li').click(function() {
+            $(this).css("text-decoration", "line-through");
+        })
     })
 })
