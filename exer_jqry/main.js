@@ -9,5 +9,10 @@ $(document).ready(function() {
     
     $('form').on('submit', function(e) {
         e.preventDefault();
+        const novaTarefa = $('#tarefa-nova').val();
+        const inserirTarefa = $('<li></li>');
+        $(`<li>${novaTarefa}</li>`).appendTo(inserirTarefa);
+        $(inserirTarefa).appendTo('ul');
+        $('#tarefa-nova').val('');
     })
 })
