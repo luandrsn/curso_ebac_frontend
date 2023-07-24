@@ -11,8 +11,9 @@
 }
 
 header {
-    background-color: #213669;
+    background-color: #0a5a9b;
     padding: 16px 0;
     color: #fff;
     font-family: 'Kanit', sans-serif;
+    border-bottom: 10px solid #4c86b5;
 }
