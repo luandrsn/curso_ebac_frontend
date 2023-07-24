@@ -21,4 +21,63 @@ header {
 
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: #d5e2efa3;
 }
+
+section h2 {
+    padding: 20px 0;
+    margin-top: 30px;
+    color: #0a5a9b;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid  #4c86b5;
+    border-radius: 5px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 100px;
+}
+
+form {
+    max-width: 800px;
+    font-size: 18px;
+    color: #333436;
+}
+
+button {
+    padding: 8px 0;
+    border: none;
+    background-color: #0a5a9b;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+form > .bttn {
+    text-align: center;
+}
+
